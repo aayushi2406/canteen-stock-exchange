@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canteen Stock Exchange</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <h1>Canteen Stock Exchange</h1>
+        <p class="subtitle">prices update every 5 second</p>
+      </div>
+
+      <div class="header-right">
+        <div class="badge open">Market Open</div>
+        <div class="viewer">
+          <div class="dot"></div>
+          <div class="viewer-count" id="viewerCount">0</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- WARNING BANNER -->
+    <div class="banner">
+      ⚠️ <span>Time break rush! Maggie demand is surging!</span>
+    </div>
+
+    <!-- CARDS -->
+    <section class="cards" id="cards"></section>
+
+    <!-- CHART -->
+    <section class="chart-section">
+      <h2>Price History</h2>
+      <canvas id="priceChart"></canvas>
+    </section>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
